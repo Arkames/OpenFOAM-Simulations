@@ -14,7 +14,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     foamRun;
+application     simpleFoam;
 
 solver          incompressibleFluid;
 
@@ -46,9 +46,9 @@ timePrecision   6;
 
 runTimeModifiable true;
 
-function
+functions
 {
-    include "forceCoeffs"
+    #include "forceCoeffs"
 }
 
 // ************************************************************************* //
